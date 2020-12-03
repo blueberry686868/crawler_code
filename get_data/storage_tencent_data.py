@@ -15,8 +15,7 @@ def update_details():
     try:
         li = get_tencent_data()[1]  # 0是历史数据字典， 1是详细数据字典
         conn, cursor = get_conn()
-        sql = "insert into details (update_time, province, city, confirm, confirm_now, confirm_add, heal, dead) " \
-              "values(%s,%s,%s,%s,%s,%s,%s,%s)"
+        sql = "insert into details (update_time, province, city, confirm, confirm_now, confirm_add, heal, dead) values(%s,%s,%s,%s,%s,%s,%s,%s)"
         sql_query = "select %s=(select update_time from details order by id desc limit 1)"  # 对比当前最大时间戳
         cursor.execute(sql_query, li[0][0])
         if not cursor.fetchone()[0]:
@@ -98,5 +97,5 @@ def update_hotsearch():
 
 if __name__ == '__main__':
     insert_history()
-    # update_details()
-    # update_hotsearch()
+    update_details()
+    update_hotsearch()

@@ -12,7 +12,7 @@ def get_time():
 def get_conn():
     conn = pymysql.connect(host='127.0.0.1',
                            user='root',
-                           password='123456',
+                           password='mysql',
                            db='china_cov')
     cursor = conn.cursor()
 
