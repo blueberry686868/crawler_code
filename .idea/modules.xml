@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Cov.iml" filepath="$PROJECT_DIR$/.idea/Cov.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yiqing_crawler/.idea/yiqing_crawler.iml" filepath="$PROJECT_DIR$/../yiqing_crawler/.idea/yiqing_crawler.iml" />
     </modules>
   </component>
 </project>
